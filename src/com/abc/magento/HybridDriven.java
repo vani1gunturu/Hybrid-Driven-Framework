@@ -22,11 +22,11 @@ public class HybridDriven
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.get(url);
-	    driver.findElement(By.linkText("My Account")).click();
-	    driver.findElement(By.xpath(emailloc)).sendKeys(email);
-	    driver.findElement(By.xpath(passwordlocation)).sendKeys(password);
-	    driver.findElement(By.xpath(next)).click();
-	    driver.findElement(By.linkText("Log Out")).click();
+	        driver.get(url);
+	        driver.findElement(By.linkText("My Account")).click();
+	        driver.findElement(By.xpath(emailloc)).sendKeys(email);
+	        driver.findElement(By.xpath(passwordlocation)).sendKeys(password);
+	        driver.findElement(By.xpath(next)).click();
+	        driver.findElement(By.linkText("Log Out")).click();
 	}
 }
